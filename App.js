@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
+import { Header } from './Header';
+import { Signup } from './Signup';
+
 class App extends Component{
-   render(){
-       var myStyle = {
-           color:'blue',
-           fontSize:20,
-           textAlign:'center'
-       }
-      return(
-         <div>
-            <h1 style = {myStyle}>Welcome to React Project</h1>
-         </div>
-      );
-   }
+    render(){
+        return(
+            <div>
+                <Header/>
+                <Signup/>
+            </div>
+        );
+    }
 }
 export default App;
